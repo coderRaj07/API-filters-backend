@@ -12,18 +12,18 @@ To run the app locally, follow these steps:
 1. Install the required dependencies using npm.
    
    ```cmd
-      npm i
+   npm i
 
 
 2. Run script to generate mongoDB database collection.
    
    ```cmd
-      node scripts/productDB.js
+   node scripts/productDB.js
 
 3. Start the local server.
    
    ```cmd
-      npm run dev
+   npm run dev
 
 
 
