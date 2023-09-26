@@ -8,9 +8,17 @@ Welcome to the Product API, which provides various filtering options for retriev
 To run the app locally, follow these steps:
 
 1. Install the required dependencies using npm.
+   
 ```npm i```
-2. Start the local server.
+
+2. Run script to generate mongoDB database collection.
+   
+```node scripts/productDB.js```
+
+3. Start the local server.
+   
 ```npm run dev```
+
 
 
 Once the server is running, you can access the API at 
