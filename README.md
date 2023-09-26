@@ -35,7 +35,7 @@ To run the app locally, follow these steps:
 
 Once the server is running, you can access the API at 
 
-http://localhost:5000/api.
+http://localhost:5000/api
 
 ## Adding Filters
 To apply filters to the API request, you can add query parameters to the URL. Here are some available filters:
@@ -52,6 +52,9 @@ http://localhost:5000/api?search=apple&featured=true&price=154&price=1154
 
 Feel free to explore and customize the API using these filters to get the data you need.
 
+<br/><br/>
 
-<p align="center">Thank you for using the Product API!</p>
-```
+<p align="center">Copyright &copy; 2023 coderRaj07. All rights reserved.</p>
+
+<p align="center">Thank you for using the Product Filter API!</p>
+
