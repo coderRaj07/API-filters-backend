@@ -1,68 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product API</title>
+    <title>Product API Documentation</title>
 </head>
 <body>
-    <h1>Product API</h1>
+    <h1>Welcome to the Product API</h1>
     
-    <p>Welcome to the Product API documentation. This API allows you to retrieve products based on various filters and search criteria.</p>
+    <p>This API allows you to retrieve a list of products with various filtering options. You can search for products, filter by price, and even filter by featured status.</p>
 
     <h2>Example APIs for Local Machines</h2>
 
-    <p>Here are some example API calls you can make to this API on your local machine:</p>
+    <p>Here are some example API requests you can make to your local server:</p>
 
-    <h3>Multiselect Prices, Search for 'Apple', and Featured Products</h3>
-    <pre><code>GET http://localhost:5000/api?search=apple&featured=true&price=154&price=1154</code></pre>
-
-    <p>This API call will return products that match the following criteria:</p>
-    <ul>
-        <li>Search term: 'Apple'</li>
-        <li>Featured products: true</li>
-        <li>Price options: 154 and 1154</li>
-    </ul>
+    <h3>Multi-select Prices, Search for 'Apple', and Filter by Featured (true)</h3>
+    <p>Retrieve products with the search term 'apple', a price of 154, and a price of 1154 that are also featured.</p>
+    <code>http://localhost:5000/api?search=apple&featured=true&price=154&price=1154</code>
 
     <h3>Single Select Price and Search for 'S20'</h3>
-    <pre><code>GET http://localhost:5000/api?search=s20&price=505</code></pre>
+    <p>Retrieve products with the search term 'S20' and a price of 505.</p>
+    <code>http://localhost:5000/api?search=S20&price=505</code>
 
-    <p>This API call will return products that match the following criteria:</p>
-    <ul>
-        <li>Search term: 'S20'</li>
-        <li>Price options: 505</li>
-    </ul>
+    <h2>Running the App</h2>
 
-    <h2>How to Run the App</h2>
+    <p>To run the app locally, follow these steps:</p>
 
-    <p>Follow these steps to run the application locally:</p>
     <ol>
-        <li>Clone the repository:</li>
-        <pre><code>git clone https://github.com/your/repo.git</code></pre>
-
-        <li>Install the dependencies:</li>
-        <pre><code>npm install</code></pre>
-
-        <li>Start the server:</li>
-        <pre><code>npm start</code></pre>
-
-        <li>Access the API:</li>
-        <pre><code>http://localhost:5000/api</code></pre>
+        <li>Install the required dependencies using npm:</li>
     </ol>
 
-    <p>Once the server is running, you can add filters to the API URL as shown in the example APIs above.</p>
+    ```shell
+    npm install
+    ```
 
-    <h2>API Filters</h2>
+    <ol start="2">
+        <li>Start the local server:</li>
+    </ol>
 
-    <p>The API supports the following filters:</p>
+    ```shell
+    npm start
+    ```
+
+    <p>Once the server is running, you can access the API at <code>http://localhost:5000/api</code>.</p>
+
+    <h2>Adding Filters</h2>
+
+    <p>To apply filters to the API request, you can add query parameters to the URL. Here are some available filters:</p>
+
     <ul>
         <li><strong>search</strong>: Search for products by name or company.</li>
-        <li><strong>price</strong>: Filter by price (single or multiple values).</li>
-        <li><strong>featured</strong>: Filter by featured products (true or false).</li>
-        <li><strong>page</strong>: Specify the page number for pagination (default: 1).</li>
-        <li><strong>perPage</strong>: Specify the number of products per page (default: 10).</li>
+        <li><strong>price</strong>: Filter by price. You can select a single price or multiple price values.</li>
+        <li><strong>featured</strong>: Filter by featured status (true or false).</li>
+        <li><strong>page</strong>: Specify the page number for pagination.</li>
+        <li><strong>perPage</strong>: Specify the number of products per page.</li>
     </ul>
 
-    <p>If you have any questions or encounter any issues, please refer to the API documentation or contact the API developer.</p>
+    <p>For example, to search for products with the name 'apple' that are featured and have prices of 154 and 1154, you can use the following URL:</p>
+
+    <code>http://localhost:5000/api?search=apple&featured=true&price=154&price=1154</code>
+
+    <p>Feel free to explore and customize the API using these filters to get the data you need.</p>
+
+    <p>Thank you for using the Product API!</p>
 </body>
 </html>
