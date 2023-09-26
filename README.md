@@ -2,19 +2,19 @@
 
 Welcome to the Product API, which provides various filtering options for retrieving product information. You can search for products, filter by price, and even filter by featured status.
 
-<details open="">
+<details >
   
-  Example APIs for Local Machines
+  **Example APIs for Local Machines**
 
   Here are some example API requests you can make to your local server:
 
-  **Multi-select Prices, Search for 'Apple', and Filter by Featured (true)**
+  - **Multi-select Prices, Search for 'Apple', and Filter by Featured (true)**
 
   Retrieve products with the search term 'apple', a price of 154, and a price of 1154 that are also featured.
   
    http://localhost:5000/api?search=apple&featured=true&price=154&price=1154
   
-  **Single Select Price and Search for 'S20'**
+  - **Single Select Price and Search for 'S20'**
   
   Retrieve products with the search term 'S20' and a price of 505.
   
@@ -49,6 +49,7 @@ To apply filters to the API request, you can add query parameters to the URL. He
 For example, to search for products with the name 'apple' that are featured and have prices of 154 and 1154, you can use the following URL:
 
 http://localhost:5000/api?search=apple&featured=true&price=154&price=1154
+
 
 Feel free to explore and customize the API using these filters to get the data you need.
 
