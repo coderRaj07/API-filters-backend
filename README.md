@@ -10,29 +10,25 @@ Welcome to the Product API, which provides various filtering options for retriev
   ### Multi-select Prices, Search for 'Apple', and Filter by Featured (true)
 
   Retrieve products with the search term 'apple', a price of 154, and a price of 1154 that are also featured.
+  http://localhost:5000/api?search=apple&featured=true&price=154&price=1154
+  
+  ### Single Select Price and Search for 'S20'
+  
+  Retrieve products with the search term 'S20' and a price of 505.
+  http://localhost:5000/api?search=S20&price=505
 
-
-  GET http://localhost:5000/api?search=apple&featured=true&price=154&price=1154
-Single Select Price and Search for 'S20'
-Retrieve products with the search term 'S20' and a price of 505.
-
-
-Copy code
-```http://localhost:5000/api?search=S20&price=505```
 </details>
-Running the App
+
+## Running the App
+
 To run the app locally, follow these steps:
 
-Install the required dependencies using npm:
-
-bash
-Copy code
+1. Install the required dependencies using npm.
 ```npm i```
-Start the local server:
-
-bash
-Copy code
+2. Start the local server.
 ```npm run dev```
+
+
 Once the server is running, you can access the API at ```http://localhost:5000/api.```
 
 ## Adding Filters
