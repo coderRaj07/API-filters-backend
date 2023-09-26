@@ -14,7 +14,6 @@ To run the app locally, follow these steps:
    ```cmd
    npm i
 
-
 2. Run script to generate mongoDB database collection.
    
    ```cmd
@@ -24,8 +23,6 @@ To run the app locally, follow these steps:
    
    ```cmd
    npm run dev
-
-
 
 Once the server is running, you can access the API at 
 
