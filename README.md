@@ -7,14 +7,16 @@ Welcome to the Product API, which provides various filtering options for retriev
 
   Here are some example API requests you can make to your local server:
 
-  ### Multi-select Prices, Search for 'Apple', and Filter by Featured (true)
+  ## Multi-select Prices, Search for 'Apple', and Filter by Featured (true)
 
   Retrieve products with the search term 'apple', a price of 154, and a price of 1154 that are also featured.
+  
   http://localhost:5000/api?search=apple&featured=true&price=154&price=1154
   
-  ### Single Select Price and Search for 'S20'
+  ## Single Select Price and Search for 'S20'
   
   Retrieve products with the search term 'S20' and a price of 505.
+  
   http://localhost:5000/api?search=S20&price=505
 
 </details>
@@ -29,7 +31,9 @@ To run the app locally, follow these steps:
 ```npm run dev```
 
 
-Once the server is running, you can access the API at ```http://localhost:5000/api.```
+Once the server is running, you can access the API at 
+
+http://localhost:5000/api.
 
 ## Adding Filters
 To apply filters to the API request, you can add query parameters to the URL. Here are some available filters:
@@ -42,10 +46,10 @@ To apply filters to the API request, you can add query parameters to the URL. He
 
 For example, to search for products with the name 'apple' that are featured and have prices of 154 and 1154, you can use the following URL:
 
+http://localhost:5000/api?search=apple&featured=true&price=154&price=1154
 
-Copy code
-```http://localhost:5000/api?search=apple&featured=true&price=154&price=1154```
 Feel free to explore and customize the API using these filters to get the data you need.
+
 
 <p align="center">Thank you for using the Product API!</p>
 ```
