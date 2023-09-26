@@ -50,7 +50,7 @@ http://localhost:5000/api?search=apple&featured=true&price=154&price=1154
 
 Feel free to explore and customize the API using these filters to get the data you need.
 
-<p align="center">Thank you for using the Product Filter API!</p>
+Thank you for using the Product Filter API!
 
 <br/><br/>
 
