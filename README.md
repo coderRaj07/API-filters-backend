@@ -1,6 +1,8 @@
 ## Product API Documentation
 
-Welcome to the Product API, which provides various filtering options for retrieving product information. You can search for products, filter by price, and even filter by featured status.
+Welcome to the Product API, which provides various filtering options for retrieving product information.
+
+You can search for products, filter by price, and even filter by featured status.
 
 
 ## Running the App
