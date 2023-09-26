@@ -3,8 +3,6 @@
 Welcome to the Product API, which provides various filtering options for retrieving product information. You can search for products, filter by price, and even filter by featured status.
 
 <details >
-  
-  **Example APIs for Local Machines**
 
   Here are some example API requests you can make to your local server:
 
@@ -50,12 +48,13 @@ For example, to search for products with the name 'apple' that are featured and 
 
 http://localhost:5000/api?search=apple&featured=true&price=154&price=1154
 
-
 Feel free to explore and customize the API using these filters to get the data you need.
+
+<p align="center">Thank you for using the Product Filter API!</p>
 
 <br/><br/>
 
 <p align="center">Copyright &copy; 2023 coderRaj07. All rights reserved.</p>
 
-<p align="center">Thank you for using the Product Filter API!</p>
+
 
