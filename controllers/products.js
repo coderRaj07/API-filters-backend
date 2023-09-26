@@ -8,7 +8,10 @@ const getProducts = async (req, res) => {
     // Define schema for validation using Joi
     const schema = Joi.object({
         search: Joi.string().allow(''), // Allow an empty string for search
-        price: Joi.array().items(Joi.number()), // Allow selecting multiple price values
+        price: Joi.alternatives(
+            Joi.number(),
+            Joi.array().items(Joi.number())
+        ), // Allow selecting a single price or multiple price values
         featured: Joi.boolean(),
         page: Joi.number().default(1),
         perPage: Joi.number().default(10),
@@ -26,9 +29,9 @@ const getProducts = async (req, res) => {
     // Modify and extend the filter object based on properties selected
     for (const key in filter) {
         if (key === 'price') {
-            // Ensure filter[key] is an array
+            // if price is single query
             if (!Array.isArray(filter[key])) {
-                filter[key] = [filter[key]];
+                filter[key] = filter[key];
             }
             filter[key] = { $in: filter[key] }; // Filter by multiple prices
         }
