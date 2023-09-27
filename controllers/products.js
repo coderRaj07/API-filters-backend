@@ -62,7 +62,13 @@ const getProducts = async (req, res) => {
      //just return the result
         return products;
     } catch (error) {
-        res.status(500).json({ error: 'Internal server error' });
+
+     // don't return json response here
+     // res.status(500).json({ error: 'Internal server error' });
+     // as we will be handling it inside routers sendErrorResonse()
+     
+     //just return the error
+        return error;
     }
 };
 
