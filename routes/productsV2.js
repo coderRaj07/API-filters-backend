@@ -13,7 +13,8 @@ const defineDetailsRoutes = (sendSuccessResponse, sendErrorResponse) => {
   router.route("/").get(async (req, res) => {
     try {
       const products = await getProducts(req,res);
-      res.json(products);
+      //res.json(products);
+      sendSuccessResponse(req,res,products)
     } catch (error) {
       sendErrorResponse(req, res, error);
     }

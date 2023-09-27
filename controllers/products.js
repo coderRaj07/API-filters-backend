@@ -52,10 +52,15 @@ const getProducts = async (req, res) => {
     // Calculate skip and limit for pagination
     const skip = (page - 1) * perPage;
     const limit = perPage;
-
+    
     try {
         const products = await findProducts(filter, skip, limit);
-        res.json(products);
+     // don't return json response here
+     // res.json(products);
+     // as we will be handling it inside routers sendSuccessResonse()   
+     
+     //just return the result
+        return products;
     } catch (error) {
         res.status(500).json({ error: 'Internal server error' });
     }
